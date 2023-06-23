@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <title>Nadsoft</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="body-overlay"></div>
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><span>Project Name</span></h3>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#" class="dashboard">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <!-- <div class="small-screen navbar-display"> -->
+                <li class="">
+                    <a href="#"><span>Messages</span></a>
+                </li>
+                <li class="">
+                    <a href="#"><span>Customers</span></a>
+                </li>
+                <li class="">
+                    <a href="#"><span>Campaigns</span></a>
+                </li>
+                <li class="">
+                    <a href="#"><span>Calender</span></a>
+                </li>
+                <li class="">
+                    <a href="#"><span>Content</span></a>
+                </li>
+
+                <li class="">
+                    <a href="#">
+                        <span>Videos</span>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="#"><span>List</span></a>
+                </li>
+
+
+            </ul>
+            <div class="sidebar-footer">
+                <div class="footer-card">
+                    <div class="footer-img">
+                        <img src="./profile.jpg" class='img-fluid' alt="Profile">
+                    </div>
+                    <div class="footer-textBox">
+
+                        <div>My Profile</div>
+                        <div>123456789</div>
+
+
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </nav>
+
+        <div id="content">
+            <div class="top-navbar">
+                <!-- <button type="button" id="sidebarCollapse" class="d-xl-block d-lg-block d-md-mone d-none">
+                    <span class="material-icons">arrow_back_ios</span>
+                </button> -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#" id="Dash-button">Navbar</a>
+
+                        <form class="d-flex">
+                            <button class="btn " type="submit">
+                                <i class="uil uil-search"></i>
+                            </button>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+                        </form>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#"><i
+                                            class="uil uil-envelope-check"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="uil uil-comment-alt"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="uil uil-setting"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="uil uil-question-circle"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="uil uil-user"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Content-Notification -->
+            <div class="container-fluid Content-Notification">
+                <div class="row" style="margin-top: 20px; margin-left: 10px;">
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-notification" style="margin-top: 20px;">
+                        Notifications
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-card" style="display: flex; align-items: center; padding: 20px;">
+
+                            <div style="background-color: rgb(251, 6, 6);
+                            display: flex; align-items: center; justify-content: center; color: white;
+                            margin: 4px 6px;padding: 10px;width: 34px; height: 34px;  border-radius: 50px;">
+                                5</div>
+                            <div style="margin: 4px 6px;">Unreplied Mails</div>
+                            <div><button class="cta">
+
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 ">
+                        <div class="col-card" style="display: flex; align-items: center; padding: 20px;">
+
+                            <div style="background-color: rgb(251, 6, 6);
+                            display: flex; align-items: center; justify-content: center; color: white;
+                            margin: 4px 6px;padding: 10px;width: 34px; height: 34px;  border-radius: 50px;">
+                                12</div>
+                            <div style="margin: 4px 6px;">Unreplied SMS</div>
+                            <div><button class="cta">
+
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-card" style="display: flex; align-items: center; padding: 20px;">
+
+                            <div style="background-color: rgb(251, 6, 6);
+                            display: flex; align-items: center; justify-content: center; color: white;
+                            margin: 4px 6px;padding: 10px;width: 34px; height: 34px;  border-radius: 50px;">
+                                3</div>
+                            <div style="margin: 4px 6px;">Missed Calls</div>
+                            <div><button class="cta">
+
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-6 col-sm-6" style="font-weight: 600;margin-top: 20px;">
+                        <span>Need Help</span><i class="uil uil-question-circle"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-Content">
+                <div class="row" style="margin: 15px auto; padding-left: 20px;padding-right: 20px;">
+                    <div class="col-lg-7 col-md-12">
+                        <div class="row">
+                            <div class="col" style="font-size: 20px; font-weight: 700; margin-right: 20px;">
+                                Messages
+                            </div>
+                            <div class="col Messages-class" style="margin-top: 5px;"><a style="font: 500 x-small ;"
+                                    id="DayClick">Day</a></div>
+                            <div class="col Messages-class" style="margin-top: 5px;"><a style="font: 500 x-small ;"
+                                    id="WeekClick">Week</a></div>
+                            <div class="col Messages-class" style="margin-top: 5px;"><a style="font: 500 x-small ;"
+                                    id="week2Click">2weeks</a></div>
+                            <div class="col Messages-class" style="margin-top: 5px;"><a style="font-size: medium;
+                                     color: rgb(86, 85, 85);" id="monthclick">Month</a></div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12" style="min-height: 406px">
+                                <div class="main-card">
+                                    <div class="row hoverRow"
+                                        style="margin: 20px auto;padding-top: 10px;padding-bottom: 10px; ">
+                                        <div class="col" style="margin-top: 7px;"><i class="uil uil-envelope"></i></div>
+                                        <div class="col" style="font-weight: 700; margin-top: 5px;">Emails</div>
+                                        <div class="col"><span style="color: blue; font-weight: 700;"
+                                                id="email-sent">160</span> Sent
+                                        </div>
+                                        <div class="col"><span style="color: green;font-weight: 700;"
+                                                id="email-rec">75</span> Recieved
+                                        </div>
+                                        <div class="col"><span style="color: red;font-weight: 700;"
+                                                id="email-unread">5</span> Unread
+                                        </div>
+                                        <div class="col">
+                                            <button class="cta">
+                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                                    <path d="M1,5 L11,5"></path>
+                                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row hoverRow"
+                                        style="margin: 20px auto;padding-top: 10px;padding-bottom: 10px; ">
+                                        <div class="col" style="margin-top: 7px;"><i class="uil uil-envelope-add"></i>
+                                        </div>
+                                        <div class="col" style="font-weight: 700; margin-top: 5px;">SMS</div>
+                                        <div class="col"><span style="color: blue; font-weight: 700;"
+                                                id="sms-sent">300</span> Sent
+                                        </div>
+                                        <div class="col"><span style="color: green;font-weight: 700;"
+                                                id="sms-rec">99</span> Recieved
+                                        </div>
+                                        <div class="col"><span style="color: red;font-weight: 700;"
+                                                id="sms-unread">12</span> Unread
+                                        </div>
+                                        <div class="col">
+                                            <button class="cta">
+                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                                    <path d="M1,5 L11,5"></path>
+                                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row hoverRow"
+                                        style="margin: 20px auto;padding-top: 10px;padding-bottom: 10px; ">
+                                        <div class="col" style="margin-top: 7px;"><i class="uil uil-phone"></i></i>
+                                        </div>
+                                        <div class="col" style="font-weight: 700; margin-top: 5px;">Calls</div>
+                                        <div class="col"><span style="color: blue; font-weight: 700;"
+                                                id="call-sent">1000</span> Sent
+                                        </div>
+                                        <div class="col"><span style="color: green;font-weight: 700;"
+                                                id="call-rec">499</span>
+                                            Recieved
+                                        </div>
+                                        <div class="col"><span style="color: red;font-weight: 700;"
+                                                id="call-unread">12</span> Missed
+                                        </div>
+                                        <div class="col">
+                                            <button class="cta">
+                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                                    <path d="M1,5 L11,5"></path>
+                                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <div class="row" style="display: flex; flex-direction: row; align-items: center;">
+                            <div class="col-md-4" style="font-size: 20px; font-weight: 700;"> Pipeline
+                            </div>
+                            <div class=" col-md-6">Full Pipeline</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12" style="min-height: 406px">
+                                <div class="main-card">
+                                    <div class=" pipeline-row">
+                                        <div style="width: 9px;height: 9px; background-color: rgb(5, 54, 247);
+                                        border-radius: 50%;"></div>
+                                        <div style="width: 70px;">Recieved</div>
+                                        <div style="border: 1px solid gray;
+                                         border-radius: 20px; width: 40px; height: 25px;text-align: center;">3</div>
+                                        <div style="background-color:  rgb(196, 247, 196);
+                                         border-radius: 20px; width: 100px; height: 25px;text-align: center;
+                                         color:  rgb(3, 108, 3);">$3000
+                                        </div>
+
+                                    </div>
+                                    <div class=" pipeline-row">
+                                        <div style="width: 9px;height: 9px; background-color: rgb(252, 198, 4);
+                                        border-radius: 50%;"></div>
+                                        <div style="width: 70px;">Contact</div>
+                                        <div style="border: 1px solid gray;
+                                         border-radius: 20px; width: 40px; height: 25px;text-align: center;">2</div>
+                                        <div style="background-color:  rgb(196, 247, 196);
+                                         border-radius: 20px; width: 100px; height: 25px;text-align: center;
+                                         color:  rgb(3, 108, 3);">$2000
+                                        </div>
+
+                                    </div>
+                                    <div class=" pipeline-row">
+                                        <div style="width: 9px;height: 9px; background-color: rgb(202, 6, 251);
+                                        border-radius: 50%;"></div>
+                                        <div style="width: 70px;">Appointment</div>
+                                        <div style="border: 1px solid gray;
+                                         border-radius: 20px; width: 40px; height: 25px;text-align: center;">2</div>
+                                        <div style="background-color:  rgb(196, 247, 196);
+                                         border-radius: 20px; width: 100px; height: 25px;text-align: center;
+                                         color:  rgb(3, 108, 3);">$2000
+                                        </div>
+
+                                    </div>
+                                    <div class=" pipeline-row">
+                                        <div style="width: 9px;height: 9px; background-color: rgb(3, 252, 186);
+                                        border-radius: 50%;"></div>
+                                        <div style="width: 70px;">Sold</div>
+                                        <div style="border: 1px solid gray;
+                                         border-radius: 20px; width: 40px; height: 25px;text-align: center;">1</div>
+                                        <div style="background-color:  rgb(196, 247, 196);
+                                         border-radius: 20px; width: 100px; height: 25px;text-align: center;
+                                         color:  rgb(3, 108, 3);">$1000
+                                        </div>
+
+                                    </div>
+                                    <div class=" pipeline-row">
+                                        <div style="width: 9px;height: 9px; background-color: rgb(253, 3, 3);
+                                       border-radius: 50%;"></div>
+                                        <div style="width: 70px;">Lost</div>
+                                        <div style="border: 1px solid gray;;
+                                         border-radius: 20px; width: 40px; height: 25px;text-align: center;">3</div>
+                                        <div style="background-color:  rgb(196, 247, 196);
+                                         border-radius: 20px; width: 100px; height: 25px;text-align: center;
+                                         color:  rgb(108, 3, 3);">$3000
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- <script src="jquery-3.6.4.min.js"></script> -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#Dash-button,.body-overlay').on('click', function () {
+                $('#sidebar,.body-overlay').toggleClass('show-nav');
+            });
+
+        });
+
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
